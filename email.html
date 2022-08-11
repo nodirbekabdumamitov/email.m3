@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>email</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+	    .header{
+	    	height: 950px;
+	    	background-color: #80808075;
+	    }
+	    .head{
+	    	width: 600px;
+	    	height: 850px;
+	    	border: solid #0806067a 1px;
+	    	border-radius: 10px;
+	    	margin: 0px auto;
+	    	background-color:#dce8ed;
+	    	padding: 20px;
+	    }
+	    h1{
+	    	margin-left: 100px;
+	    }
+	    .input{
+	    	color: grey;
+            margin-left: 30px;
+            float: left;
+            font-size: 18px;
+	    }
+	    .input2{
+	    	width: 250px;
+	    	height: 40px;
+	    	border-color: #a7979775;
+	    	border-radius: 5px;
+	    	padding: 5px;
+	    	font-size: 20px;
+	    	border: 2px solid #a7979775;
+	    }
+	    .input2:hover{
+	    	border-color:#5aabcd ;
+	    }
+	    .input2:focus{
+	    	border-color: #5aabcd;
+	    	outline: #5aabcd;
+	    }
+	    .input3{
+	    	color: grey;
+	    	font-size: 18px;
+	    	margin-left: 300px;
+	    }
+	    .inpu{
+	    	width: 250px;
+	    	height: 40px;
+	    	border-color:#a7979775;
+	    	border-radius: 5px;
+	    	padding: 5px;
+	    	font-size: 20px; 
+	    	border: 2px solid #a7979775;
+	    }
+	    .inpu:hover{
+            border-color: #5aabcd;
+	    }
+	    .inpu:focus{
+	    	border-color: #5aabcd;
+	    	outline: #5aabcd;
+	    }
+	    .selected{
+	    	color: grey;
+	    	font-size: 18px;
+	    	margin-top: 20px;
+	    	margin-left: 30px;
+	    }
+	    .select{
+	    	width: 90px;
+	    	height: 50px;
+	    	color: grey;
+	    	border-color:#a7979775;
+	        border-radius: 5px;
+	    	padding: 5px;
+	    	font-size: 20px;
+	    	float: left; 
+	    }
+	    .select:hover{
+	    	border-color: #5aabcd;
+	    }
+	    .select:focus{
+	    	border-color: #5aabcd;
+	    	outline: #5aabcd;
+	    }
+	    .month{
+	    	width: 340px;
+	    	height: 50px;
+	    	color: grey;
+	    	border-color:#a7979775;
+	        border-radius: 5px;
+	    	padding: 5px;
+	    	font-size: 20px; 
+	    	float: left;
+	    }
+	    .month:hover{
+	    	border-color: #5aabcd;
+	    }
+	    .month:focus{
+            border-color: #5aabcd;
+	    	outline: #5aabcd;
+	    }
+	    .year{
+	    	width: 95px;
+	    	height: 50px;
+	    	color: grey;
+	    	border-color:#a7979775;
+	        border-radius: 5px;
+	    	padding: 5px;
+	    	font-size: 20px; 
+	    }
+	    .year:hover{
+	    	border-color:  #5aabcd;
+	    }
+	    .year:focus{
+	    	border-color: #5aabcd;
+	    	outline: #5aabcd;
+	    }
+	    .radio{
+	    	font-size: 23px;
+	    	color: grey;
+	    	margin-left: 30px;
+	    	margin-top: 30px;
+	    }
+	    .mail{
+	    	color: grey;
+	    	font-size: 20px; 
+	    	margin-left: 30px;
+	    	margin-top: 25px;
+	    }
+	    .amail{
+	    	width: 400px;
+	    	height: 40px;
+	    	color: grey;
+	    	border-color:#f3655b;
+	        border-radius: 5px;
+	    	padding: 5px;
+	    	font-size: 20px; 
+	    	float: left;
+	    	border: 2px solid #f3655b ;
+	    }
+	    .amail:hover{
+	    	border-color: #c51e12;
+	    }
+	    .amail:focus{
+	    	border-color: #c51e12;
+	    	outline: #c51e12;
+	    }
+	    .mailru{
+	    	width: 115px;
+	    	height: 52px;
+	    	font-size: 18px;
+	    	border:solid #f3655b 2px; 
+	    	border-radius: 5px; 
+	    }
+	    .mailru:hover{
+	    	border-color: #c51e12;
+	    }
+	    .mailru:focus{
+	    	border-color: #c51e12;
+	    	outline: #c51e12;
+	    }
+	    .ime{
+	    	margin-top: 5px;
+	    	color: red;
+	    }
+	    .parol{
+	    	color: grey;
+	    	margin-left:30px; 
+	    	font-size: 18px;
+	    }
+	    .pass{
+	    	width: 520px;
+	    	height: 40px;
+	    	border-radius: 5px;
+	        border-color: #e3cdcd;
+	        font-size: 25px;
+	        padding: 5px;
+	        border: 2px solid #e3cdcd;
+	    }
+	    .pass:hover{
+            border-color: #5aabcd;
+	    }
+	    .pass:focus{
+	    	border-color:#5aabcd;
+	    	outline: #5aabcd;
+	    }
+	    .h4{
+	    	margin-left: 275px;
+	    	margin-top: -25px;
+	    	margin-bottom: 5px;
+	    	color: blue;
+	    }
+	    .parol2{
+	    	color: grey;
+	    	margin-left:30px; 
+	    	font-size: 18px;
+	    	margin-top: 30px;
+	    }
+	    .pass2{
+	    	width: 520px;
+	    	height: 40px;
+	    	border-radius: 5px;
+	        border-color: #e3cdcd;
+	        font-size: 25px;
+	        padding: 5px;
+	        border: 2px solid #e3cdcd; 
+	    }
+	    .pass2:hover{
+            border-color: #5aabcd;
+	    }
+	    .pass2:focus{
+	    	border-color:#5aabcd;
+	    	outline: #5aabcd;
+	    }
+	    .h42{
+	    	margin-left: 325px;
+	    	margin-top: -22px;
+	    	margin-bottom: 5px;
+	    	color: blue;
+	    }
+	    .yubor{
+	    	width: 530px;
+	    	height: 55px;
+	    	margin-left: 30px;
+	    	margin-top: 30px;
+	    	font-size: 20px;
+	    	border-radius: 5px;
+	    	border-color: blue;
+	        background-color: blue;
+	    	color: white;
+	    }	
+	    .yubor:hover{
+	    	background-color: #5e2abb;
+	    	color: white;
+	    	border-color:#5e2abb; 
+	    }
+	    .yubor:focus{
+	    	outline: blue;
+	    }
+	    .p{
+	    	color: grey;
+	    	margin-left: 30px;
+	    	font-size: 20px;
+	    }
+	    .a{
+	    	text-decoration: none;
+	    }
+	    .a:hover{
+	    	color: red;
+	    }  
+	</style>
+</head>
+<body>
+<div class="header">
+	<div class="head">
+	    <h1>Создание почтового яшика</h1>
+	    <form class="input">
+	        Имя <br> <input class="input2"  type="text" name="text" >   
+		</form>
+		<form class="input3">  
+	        Фамилия <br> <input class="inpu"  type="text" name="text" >
+	    </form>  
+	    <form class="selected">
+	    	Дата рождения <br> <select class="select" name="kun">
+            <option>День</option>
+            <option value="40">1</option>
+            <option value="60">2</option>
+            <option value="80">3</option>	
+            <option value="100">4</option>
+            <option value="120">5</option>
+            <option value="140">6</option>	
+            <option value="160">7</option>
+            <option value="180">8</option>
+            <option value="200">9</option>	
+            <option value="220">10</option>
+            <option value="240">11</option>
+            <option value="260">12</option>	
+            <option value="280">13</option>
+            <option value="300">14</option>
+            <option value="320">15</option>
+            <option value="340">16</option>
+            <option value="360">17</option>
+            <option value="380">18</option>	
+            <option value="400">19</option>
+            <option value="420">20</option>
+            <option value="440">22</option>	
+            <option value="460">23</option>
+            <option value="480">24</option>
+            <option value="500">25</option>	
+            <option value="520">26</option>
+            <option value="540">27</option>
+            <option value="560">28</option>	
+            <option value="580">29</option>
+            <option value="600">30</option>
+            <option value="620">31</option>
+        </select>
+        <select class="month" name="oy">
+            <option>Месяц</option>
+            <option>Январь</option>
+            <option>Февраль</option>
+            <option>Март</option>
+            <option>Апрель</option>
+            <option>Май</option>
+            <option>Июунь</option>
+            <option>Июль</option>
+            <option>Август</option>
+            <option>Сентябрь</option>
+            <option>Октябрь</option>
+            <option>Ноябрь</option>
+            <option>Декабрь</option>
+        </select>
+        <select class="year" name="yil">
+            <option>Год</option>
+            <option>2000</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option> 
+            <option>2010</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>1014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+        </select>
+	    </form>
+	    <form class="radio">
+	    	Пол <br> <input class="erkak" type="radio" name="gender" >Мужской
+	    	<input type="radio" name="gender" >Женский
+	    </form>
+	    <form class="mail">
+	    	Имя яшика <br> <input class="amail" type="text" name="text">
+	    	<select class="mailru">
+	    	    <option>@mail.ru</option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+	    	</select>
+	    	<h4 class="ime">Укажите желаемое имя ящика</h4>
+	    </form>
+	    <form class="parol">
+	        Пароль <br><h4 class="h4">Сгенировать надежный пароль</h4> <input class="pass" type="password" name="parol">
+	    </form>
+	    <form class="parol2">  
+            Номер телефона <h4 class="h42">Указать резурвную почту</h4> <input class="pass2"  type="number" name="raqam" value="998">	
+	    </form>
+	    <form >
+	    	<input class="yubor" type="button" name="sozdat" value="Создать">
+	    	<p class="p">Нажимая <<Создать>>,вы принимайте следующие 
+	    	<a class="a" href="#"> Условия использование</a></p>
+	    </form>
+	</div>
+</div>
+</body>
+</html>
